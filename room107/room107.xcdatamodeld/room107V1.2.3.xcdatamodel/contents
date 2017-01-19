@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="AppPopupModel" representedClassName="AppPopupModel" syncable="YES">
+        <attribute name="activatedUri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frequency" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="popupDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetParams" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="targetUri" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="AppPropertiesModel" representedClassName="AppPropertiesModel" syncable="YES">
+        <attribute name="defaultMapSearchPosition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseTags" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="iosAppUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iosPaymentTypes" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="iosRecommendedInterval" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="iosRecommendPaymentTypes" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="iosStartingAdImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="newestIosAppVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderTypeNames" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="popupVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rapidVerifyAmount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rapidVerifyPicture" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="rapidVerifySwitch" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="recommendedIosAppUpdateContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recommendedIosAppUpdateTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recommendedIosAppVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="staticResourceDomain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscribeRefreshInterval" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="subwayVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportedIosAppUpdateContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportedIosAppUpdateTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportedIosAppVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verifyCodeInterval" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="AppTextModel" representedClassName="AppTextModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ContactModel" representedClassName="ContactModel" syncable="YES">
+        <attribute name="qq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wechat" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ContractInfoModel" representedClassName="ContractInfoModel" syncable="YES">
+        <attribute name="checkinTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractFee" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="contractId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="contractNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="credentialsImages" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deposit" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="exitTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instalmentFee" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="instalmentFeeRate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="landlordIdCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landlordMoreinfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landlordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landlordTelephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monthlyPrice" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="payingType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rentAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantIdCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantMoreinfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantTelephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ContractRequestModel" representedClassName="ContractRequestModel" syncable="YES">
+        <attribute name="checkinTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="exitTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasNewUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="requestStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tenantFavicon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantTelephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waitOtherContract" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="HomeInfoModel" representedClassName="HomeInfoModel" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="groups" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="HouseListItemModel" representedClassName="HouseListItemModel" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractEnableStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="faviconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasCover" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="houseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isInterest" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isRead" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isSubscribe" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="modifiedTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="requiredGender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tagIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="HouseModel" representedClassName="HouseModel" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="auditStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="checkinTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractEnableStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="externalId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extraFees" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="facilities" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="floor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hallNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasImageId" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="houseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="kitchenNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="locationX" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="locationY" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="province" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="requiredGender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tagIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="toiletNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContactModel" syncable="YES"/>
+    </entity>
+    <entity name="InterestListItemModel" representedClassName="InterestListItemModel" syncable="YES">
+        <attribute name="buttonType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractEnableStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="contractStep" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="faviconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasContract" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasCover" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasNewUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="houseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isInterest" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="modifiedTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="requiredGender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tagIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="ItemModel" representedClassName="ItemModel" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="faviconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="modifiedTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="LandlordHouseItemModel" representedClassName="LandlordHouseItemModel" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="balanceCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="checkinTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="coupon" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="couponCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="deadline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exitTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expenseOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="historyOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="incomeOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="monthlyPrice" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="payingType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="paymentCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="paymentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="terminatedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LandlordHouseListItemModel" representedClassName="LandlordHouseListItemModel" syncable="YES">
+        <attribute name="buttonType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractEnableStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="contractId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="contractStep" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="faviconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasCover" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasNewUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="houseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isInterest" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="modifiedTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rentStatusButton" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="requiredGender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="LandlordRoomItemModel" representedClassName="LandlordRoomItemModel" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="orientation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="LandlordSuiteItemModel" representedClassName="LandlordSuiteItemModel" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="checkinTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="district" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="extraFees" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facilities" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="floor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hallNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hallPhotos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="kitchenNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="kitchenPhotos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="otherPhotos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="qq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="requiredGender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rooms" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="suiteDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toiletNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="toiletPhotos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wechat" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MessageInfoModel" representedClassName="MessageInfoModel" syncable="YES">
+        <attribute name="buttons" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="cards" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MessageListItemModel" representedClassName="MessageListItemModel" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasNewUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="OrderInfoModel" representedClassName="OrderInfoModel" syncable="YES">
+        <attribute name="deadline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finishTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PaymentInfoModel" representedClassName="PaymentInfoModel" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="balanceCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="coupon" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="couponCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="deadline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expenseOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="incomeOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="paymentCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="paymentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RentedHouseItemModel" representedClassName="RentedHouseItemModel" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="balanceCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="checkinTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractFee" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="contractId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="coupon" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="couponCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="deadline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exitTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expenseOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="historyOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="incomeOrders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="instalmentFee" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="instalmentFeeRate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="monthlyPrice" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="payingOrderType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="payingType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="paymentCost" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="paymentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="reletStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="terminatedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RentedHouseListItemModel" representedClassName="RentedHouseListItemModel" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkinTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contractId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="exitTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasNewUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="monthlyPrice" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderPrice" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="houseListItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HouseListItemModel" syncable="YES"/>
+    </entity>
+    <entity name="RoomModel" representedClassName="RoomModel" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="houseId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageIds" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orientation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SubscribeModel" representedClassName="SubscribeModel" syncable="YES">
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastModifiedTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="maxPrice" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="minPrice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sortOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SubwayLineModel" representedClassName="SubwayLineModel" syncable="YES">
+        <attribute name="keywords" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stations" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="SuiteModel" representedClassName="SuiteModel" syncable="YES">
+        <attribute name="cotenants" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="hasContract" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isCotenant" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isInterest" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="recommendHouses" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="rooms" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HouseModel" syncable="YES"/>
+        <relationship name="landlord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserModel" syncable="YES"/>
+    </entity>
+    <entity name="UserAccountInfoModel" representedClassName="UserAccountInfoModel" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="balanceNewUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="coupon" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="couponNewUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="unpaidContractId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="unpaidUserType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="UserBalanceModel" representedClassName="UserBalanceModel" syncable="YES">
+        <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="coupon" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserIdentityModel" representedClassName="UserIdentityModel" syncable="YES">
+        <attribute name="idCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserInfoModel" representedClassName="UserInfoModel" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="constellation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faviconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="major" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profession" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rapidVerifyBase" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rapidVerifyFinish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rapidVerifyNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rapidVerifyStart" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="school" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tenantType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verifyStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wechatFavicon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wechatName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserModel" representedClassName="UserModel" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="constellation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faviconUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="major" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profession" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="school" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verifyStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AppPopupModel" positionX="-27" positionY="144" width="128" height="180"/>
+        <element name="AppPropertiesModel" positionX="-27" positionY="144" width="128" height="420"/>
+        <element name="AppTextModel" positionX="-36" positionY="135" width="128" height="90"/>
+        <element name="ContactModel" positionX="-36" positionY="144" width="128" height="90"/>
+        <element name="ContractInfoModel" positionX="-45" positionY="144" width="128" height="360"/>
+        <element name="ContractRequestModel" positionX="-36" positionY="135" width="128" height="195"/>
+        <element name="HomeInfoModel" positionX="-36" positionY="135" width="128" height="75"/>
+        <element name="HouseListItemModel" positionX="-45" positionY="135" width="128" height="450"/>
+        <element name="HouseModel" positionX="-63" positionY="-18" width="128" height="510"/>
+        <element name="InterestListItemModel" positionX="-36" positionY="135" width="128" height="450"/>
+        <element name="ItemModel" positionX="-54" positionY="135" width="128" height="225"/>
+        <element name="LandlordHouseItemModel" positionX="-9" positionY="162" width="128" height="330"/>
+        <element name="LandlordHouseListItemModel" positionX="-18" positionY="153" width="128" height="450"/>
+        <element name="LandlordRoomItemModel" positionX="-36" positionY="135" width="128" height="165"/>
+        <element name="LandlordSuiteItemModel" positionX="-27" positionY="144" width="128" height="435"/>
+        <element name="MessageInfoModel" positionX="-27" positionY="144" width="128" height="135"/>
+        <element name="MessageListItemModel" positionX="-36" positionY="135" width="128" height="120"/>
+        <element name="OrderInfoModel" positionX="-36" positionY="153" width="128" height="150"/>
+        <element name="PaymentInfoModel" positionX="-18" positionY="153" width="128" height="210"/>
+        <element name="RentedHouseItemModel" positionX="-54" positionY="135" width="128" height="390"/>
+        <element name="RentedHouseListItemModel" positionX="-36" positionY="144" width="128" height="210"/>
+        <element name="RoomModel" positionX="-36" positionY="153" width="128" height="195"/>
+        <element name="SubscribeModel" positionX="-27" positionY="144" width="128" height="195"/>
+        <element name="SubwayLineModel" positionX="-36" positionY="135" width="128" height="90"/>
+        <element name="SuiteModel" positionX="-45" positionY="135" width="128" height="180"/>
+        <element name="UserAccountInfoModel" positionX="-36" positionY="135" width="128" height="150"/>
+        <element name="UserBalanceModel" positionX="-45" positionY="144" width="128" height="90"/>
+        <element name="UserIdentityModel" positionX="-54" positionY="135" width="128" height="90"/>
+        <element name="UserInfoModel" positionX="-36" positionY="135" width="128" height="405"/>
+        <element name="UserModel" positionX="-54" positionY="144" width="128" height="270"/>
+    </elements>
+</model>

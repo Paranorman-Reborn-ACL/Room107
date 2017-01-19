@@ -1,0 +1,69 @@
+http://blog.163.com/djx421@126/blog/static/48855136201411381212985/
+
+一般程序app升级时，数据库有可能发生改变，如增加表字段，增加表等。 此时有两种操作：
+
+第一种就是毫无留情的把本地旧数据库直接删掉，重新建立新的数据库；
+第二种就是数据库迁移，更新数据库。
+
+第一种情况是简单粗暴型，但不会保留任何历史数据，一般不推荐使用。
+这里主要介绍第二种情况，分四步操作：
+
+第一步，上代码，主要红色字体的地方
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+
+{
+
+    if (_persistentStoreCoordinator != nil) {
+
+        return _persistentStoreCoordinator;
+
+    }
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    NSString *folderPath = [NSString stringWithFormat:@"%@/Calendar",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]];
+
+    if(![fileManager fileExistsAtPath:folderPath]){//如果不存在,则说明是第一次运行这个程序，那么建立这个文件夹
+
+        [fileManager createDirectoryAtPath:folderPath withIntermediateDirectories:YES attributes:nil error:nil];
+
+    }
+
+    NSURL *storeURL = [NSURL fileURLWithPath:[folderPath stringByAppendingPathComponent:@"Calendar.sqlite"]];
+
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+
+                             [NSNumber numberWithBool:YES],
+
+                             NSMigratePersistentStoresAutomaticallyOption，
+
+                             [NSNumber numberWithBool:YES],
+
+                             NSInferMappingModelAutomaticallyOption, nil];
+
+    NSError *error = nil;
+
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+
+    if (![_persistentStoreCoordinatoraddPersistentStoreWithType:NSSQLiteStoreType configuration:nilURL:storeURL options:options error:&error]) {
+
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+
+        abort();
+
+    }
+
+    return _persistentStoreCoordinator;
+
+}
+
+第二步：增加一个新版本的数据模型
+
+选择Calendar.xcdatamodel文件 点击Editor  -> Add Model Version  弹出一个对话框，填写Version Name （如 Calendar 2） 和Based on model （如 Calendar）。
+
+第三步：继续选择Calendar.xcdatamodel文件 ，按option + command + 0 键，打开xcode最右侧栏， 在model version 的Current 中选择Calendar 2.
+
+第四步：修改你的Calendar 2.xcdatamodel文件（如新增字段，添加表等操作），然后记得更新你改动表的entity代码。(注：这个步骤顺序一定要注意，千万不能在原Calendar.xcdatamodeld 上直接修改表结构，再添加新版本，这样的话会一直报错)
+
+PS：NSURL *storeURL = [NSURL fileURLWithPath:[folderPath stringByAppendingPathComponent:@"Calendar.sqlite"]];  这里还是Calendar.sqlite，而不是Calendar 2.sqlite，因为在第三步中已经选择了Calendar 2。

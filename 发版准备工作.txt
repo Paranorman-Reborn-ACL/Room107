@@ -1,0 +1,11 @@
+1.修改服务器地址为 http://107room.com；
+2.修改Bundle Version 增加一位;
+3.配置项目的发布证书和描述文件；
+4.修改版本号：X.X.X；
+5.替换LogInfo为LogDebug；
+6.数据库更改后需要先行迁移；
+7.更换功能描述、关键词及应用描述；
+
+
+发版后代码迁移
+添加github库的tags；（https://github.com/107room/ios-app/tree/master切换到master后点击releases——Draft a new release）

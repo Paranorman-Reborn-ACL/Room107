@@ -1,0 +1,6 @@
+{
+	"Bundle identifier" = "com.room107.phone.ios";
+	"APS_FOR_PRODUCTION" = 1;
+	CHANNEL = 27;
+	"APP_KEY" = "fdb8565b8a6577bda84b7b21";
+}
